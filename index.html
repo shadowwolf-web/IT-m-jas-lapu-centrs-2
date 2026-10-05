@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="It mācību centrs">
+    <title>IT mācību centrs</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="site-header" <a class="logo" href="#sakums" Flexbox</a>
+        <nav class="main-nav" aria-label="Galvenā navigācija">
+            <a href="#start">Sākums</a>
+            <a href="#about-us">Par mums</a>
+            <a href="#courses">Kursi</a>
+            <a href="#contact">Kontakti</a>
+        </nav>
+    </header>
+    
+    <main id="Sākums">
+        <h1>Sveicināti IT Mājas lapu centra!</h1>
+
+        <section id="par mums">
+            <h2>Par mums</h2>
+            <p>Mēs jums piedāvajam IT programmēšanas opcijas strādāt ar paliglīdzeķļiem Github un Git ka arī Javascript.
+            </p>
+            <div class="cards">
+                <article>
+                    <h3>Kursi</h3>
+                    <p>Mēs piedāvajam 1.5 gadu apmācību IT programmēšana.</p>
+                </article>
+                <article>
+                    <h3>Apmācības</h3>
+                    <p>Praktiskas HTML un CSS un arī Git nodarbības.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <p class="intro-text">Šī lapa izmanto Flexbox navigāciju ar pielāgojumu mobilajiem ekrāniem.</p>
+    </main>
+
+
+
+    <article id="special-element" class="selector-example second-style">
+        Šo elementu vienlaikus ietekmē elementa, class un id selektori.
+    </article>
+
+    <section id="courses" class="courses-section">
+        <h2>Kursi</h2>
+        <p>Apgūsti tīmekļa izstrādes pamatus un rīkus praktiskās nodarbībās.</p>
+        <div class="cards">
+            <article class="course-card">
+                <span class="course-icon" role="img" aria-label="HTML ikona">&#60;/&#62;</span>
+                <h3>HTML</h3>
+                <p>Uzzini, kā veidot tīmekļa lapu struktūru ar HTML elementiem.</p>
+                <a class="course-link" href="#pieteiksanas">Pieteikties HTML kursam</a>
+            </article>
+            <article class="course-card">
+                <span class="course-icon" role="img" aria-label="CSS ikona">&#35;</span>
+                <h3>CSS</h3>
+                <p>Veido pievilcīgus un pielāgojamus lapu noformējumus ar CSS.</p>
+                <a class="course-link" href="#pieteiksanas">Pieteikties CSS kursam</a>
+            </article>
+            <article class="course-card">
+                <img class="course-icon course-icon-image" src="git-logo.svg" alt="Git logotips">
+                <h3>Git</h3>
+                <p>Iemācies pārvaldīt koda versijas un sekot līdzi projekta izmaiņām.</p>
+                <a class="course-link" href="#pieteiksanas">Pieteikties Git kursam</a>
+            </article>
+        </div>
+    </section>
+    <section id="pieteiksanas" class="registration-section">
+        <h2>Pieteikšanās kursiem</h2>
+        <form class="registration-form" action="#" method="post">
+            <div class="form-field">
+                <label for="name">Vārds</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+                <label for="email">E-pasts</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+                <label for="phone">Tālrunis</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="form-field">
+                <label for="course">Kurss</label>
+                <select id="course" name="course" required>
+                    <option value="" selected disabled>Izvēlieties kursu</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="git">GIT</option>
+                    <option value="github">GitHub</option>
+                </select>
+            </div>
+            <fieldset class="form-field learning-format">
+                <legend>Mācību veids</legend>
+                <label><input type="radio" name="learning-format" value="onsite" required> Klātienē</label>
+                <label><input type="radio" name="learning-format" value="online"> Attālināti</label>
+            </fieldset>
+            <div class="form-field form-field-wide">
+                <label for="comment">Komentārs</label>
+                <textarea id="comment" name="comment" rows="4"></textarea>
+            </div>
+            <label class="consent form-field-wide">
+                <input type="checkbox" name="consent" required>
+                Piekrītu savu personas datu apstrādei pieteikuma izskatīšanai.
+            </label>
+            <button class="submit-button form-field-wide" type="submit">Nosūtīt pieteikumu</button>
+        </form>
+    </section>
+
+    <body>
+        <table>
+            <thead>
+                <tr>
+                <th class="table-title" colspan="5" scope="colgroup">Grafiks</th>
+            </tr>
+            <tr>
+            
+            <tr>
+                <tr>
+                    <th scope="col">Nosaukums:</th>
+                    <th scope="col">Darba Laiks:</th>
+                    <th scope="col">Brīvdienas:</th>
+                </tr>
+                <style>
+                    table {
+                        border-collapse: collapse;
+                    }
+
+                    table,
+                    th,
+                    td {
+                        border: 1px solid black;
+                        padding: 8px;
+                    }
+                </style>
+                </head>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>10:00-12:30</td>
+                    <td>Brīvs</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>13:00-15:00</td>
+                    <td>Brīvs</td>
+                </tr>
+                <tr>
+                    <td>GIT</td>
+                    <td>8:00-12:00</td>
+                    <td>Brīvs</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer id="kontakti">
+            <h2>Kontakti</h2>
+            <p>Vārds Uzvārds: Janis Metriņš</p>
+            <p>E-pasts: Janis@RMPV.lv</p>
+            <p>Tālrunis: +371 296459713</p>
+        </footer>
+
+        </main>
+        </head>
+
+</html>
